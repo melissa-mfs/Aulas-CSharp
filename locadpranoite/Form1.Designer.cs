@@ -81,6 +81,7 @@
             this.btnenter.TabIndex = 4;
             this.btnenter.Text = "Entrar";
             this.btnenter.UseVisualStyleBackColor = true;
+            this.btnenter.Click += new System.EventHandler(this.Btnenter_Click);
             // 
             // btncancel
             // 

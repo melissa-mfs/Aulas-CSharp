@@ -16,5 +16,10 @@ namespace locadpranoite
         {
             InitializeComponent();
         }
+
+        private void Btnenter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

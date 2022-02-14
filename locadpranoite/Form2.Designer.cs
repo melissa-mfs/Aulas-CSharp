@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.RR = new System.Windows.Forms.TextBox();
+            this.txtpesquisa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlpesquisa = new System.Windows.Forms.Panel();
             this.btnpesquisa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // RR
+            // txtpesquisa
             // 
-            this.RR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RR.Location = new System.Drawing.Point(185, 55);
-            this.RR.Name = "RR";
-            this.RR.Size = new System.Drawing.Size(174, 26);
-            this.RR.TabIndex = 8;
+            this.txtpesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpesquisa.Location = new System.Drawing.Point(185, 55);
+            this.txtpesquisa.Name = "txtpesquisa";
+            this.txtpesquisa.Size = new System.Drawing.Size(174, 26);
+            this.txtpesquisa.TabIndex = 8;
             // 
             // label1
             // 
@@ -78,7 +78,7 @@
             this.ClientSize = new System.Drawing.Size(584, 409);
             this.Controls.Add(this.btnpesquisa);
             this.Controls.Add(this.pnlpesquisa);
-            this.Controls.Add(this.RR);
+            this.Controls.Add(this.txtpesquisa);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -90,7 +90,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox RR;
+        private System.Windows.Forms.TextBox txtpesquisa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlpesquisa;
         private System.Windows.Forms.Button btnpesquisa;
