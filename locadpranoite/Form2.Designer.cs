@@ -30,7 +30,7 @@
         {
             this.txtpesquisa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlpesquisa = new System.Windows.Forms.Panel();
             this.btnpesquisa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -52,13 +52,13 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Usuário:";
             // 
-            // panel1
+            // pnlpesquisa
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Location = new System.Drawing.Point(47, 113);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(490, 259);
-            this.panel1.TabIndex = 9;
+            this.pnlpesquisa.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlpesquisa.Location = new System.Drawing.Point(47, 113);
+            this.pnlpesquisa.Name = "pnlpesquisa";
+            this.pnlpesquisa.Size = new System.Drawing.Size(490, 259);
+            this.pnlpesquisa.TabIndex = 9;
             // 
             // btnpesquisa
             // 
@@ -76,7 +76,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 409);
             this.Controls.Add(this.btnpesquisa);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlpesquisa);
             this.Controls.Add(this.txtpesquisa);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
@@ -90,7 +90,7 @@
 
         private System.Windows.Forms.TextBox txtpesquisa;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlpesquisa;
         private System.Windows.Forms.Button btnpesquisa;
     }
 }
