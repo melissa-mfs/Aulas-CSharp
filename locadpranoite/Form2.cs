@@ -38,6 +38,7 @@ namespace locadpranoite
             adapter.Fill(tblveiculos);
 
             pnlpesquisa.Datasource = tblveiculos; //erro na class datasource
+            // Trocar para datagrid o panel
 
         }
 
