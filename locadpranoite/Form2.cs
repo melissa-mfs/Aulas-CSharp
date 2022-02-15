@@ -37,7 +37,7 @@ namespace locadpranoite
             adapter = new SqlDataAdapter(strsql, conn);
             adapter.Fill(tblveiculos);
 
-            // pnlpesquisa.Datasource = tblveiculos; //erro na class datasource
+            pnlpesquisa.Datasource = tblveiculos; //erro na class datasource
 
         }
 
