@@ -33,11 +33,11 @@ namespace locadpranoite
 
             tblveiculos = new DataTable();
 
-            b = "select * from veiculos where marca = '" + txtpesquisa.Text + "';";
-            adapter = new SqlDataAdapter(b, conn);
+            strsql = "select * from veiculos where marca = '" + txtpesquisa.Text + "';";
+            adapter = new SqlDataAdapter(strsql, conn);
             adapter.Fill(tblveiculos);
 
-            pnlpesquisa.DataSource = tblveiculos;
+            // pnlpesquisa.Datasource = tblveiculos; //erro na class datasource
 
         }
 
