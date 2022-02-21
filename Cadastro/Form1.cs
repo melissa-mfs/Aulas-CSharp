@@ -30,11 +30,13 @@ namespace Cadastro
             Conex.Open();
 
             strsql = "insert into categorias (categoria, descricao, valor)" +
-                "values ('Limosine', 'Carro de luxo alugado para eventos'," +
-                "'1000')";
+                "values ('"+ txtcat.Text + "', '" + txtdesc.Text + "'," +
+                "'" + txtdia.Text +"')";
 
             Comando = new SqlCommand(strsql, Conex);
             Comando.ExecuteNonQuery();
+
+            lblmensagem.Text = "Registro gravado";
 
 
 

@@ -36,7 +36,7 @@
             this.txtdesc = new System.Windows.Forms.TextBox();
             this.txtcat = new System.Windows.Forms.TextBox();
             this.Button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblmensagem = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbldia
@@ -114,15 +114,15 @@
             this.Button2.UseVisualStyleBackColor = true;
             this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // label4
+            // lblmensagem
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(334, 354);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "_____";
+            this.lblmensagem.AutoSize = true;
+            this.lblmensagem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmensagem.Location = new System.Drawing.Point(334, 354);
+            this.lblmensagem.Name = "lblmensagem";
+            this.lblmensagem.Size = new System.Drawing.Size(65, 23);
+            this.lblmensagem.TabIndex = 0;
+            this.lblmensagem.Text = "_____";
             // 
             // Form1
             // 
@@ -136,7 +136,7 @@
             this.Controls.Add(this.btcanc);
             this.Controls.Add(this.lblcat);
             this.Controls.Add(this.lbldesc);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblmensagem);
             this.Controls.Add(this.lbldia);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -155,7 +155,7 @@
         private System.Windows.Forms.TextBox txtdesc;
         private System.Windows.Forms.TextBox txtcat;
         private System.Windows.Forms.Button Button2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblmensagem;
     }
 }
 
