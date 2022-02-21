@@ -1,7 +1,8 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,31 @@ namespace Cadastro
 {
     public partial class Form1 : Form
     {
+        private SqlConnection Conex;
+        private SqlCommand Comando;
+        private string strsql, strconex;
+
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            strconex = "data source=(local);initial catalog=locadora;integrated security=sspi";
+            Conex = new SqlConnection(strconex);
+            Conex.Open();
+
+            strsql = "insert into categorias (categoria, descricao, valor)" +
+                "values ('Limosine', 'Carro de luxo alugado para eventos'," +
+                "'1000')";
+
+            Comando = new SqlCommand(strsql, Conex);
+            Comando.ExecuteNonQuery();
+
+
+
         }
     }
 }
