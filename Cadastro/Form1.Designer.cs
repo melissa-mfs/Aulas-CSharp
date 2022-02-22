@@ -118,7 +118,7 @@
             // 
             this.lblmensagem.AutoSize = true;
             this.lblmensagem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmensagem.Location = new System.Drawing.Point(334, 354);
+            this.lblmensagem.Location = new System.Drawing.Point(288, 366);
             this.lblmensagem.Name = "lblmensagem";
             this.lblmensagem.Size = new System.Drawing.Size(65, 23);
             this.lblmensagem.TabIndex = 0;
@@ -140,6 +140,7 @@
             this.Controls.Add(this.lbldia);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

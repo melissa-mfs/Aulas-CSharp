@@ -23,23 +23,35 @@ namespace Cadastro
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void Button2_Click(object sender, EventArgs e)
         {
-            strconex = "data source=(local);initial catalog=locadora;integrated security=sspi";
-            Conex = new SqlConnection(strconex);
-            Conex.Open();
+            try
+            {
+                strconex = "data source=(local);initial catalog=locadora;integrated security=sspi";
+                Conex = new SqlConnection(strconex);
+                Conex.Open();
 
-            strsql = "insert into categorias (categoria, descricao, valor)" +
-                "values ('"+ txtcat.Text + "', '" + txtdesc.Text + "'," +
-                "'" + txtdia.Text +"')";
+                strsql = "insert into categorias (categoria, descricao, valor)" +
+                    "values ('" + txtcat.Text + "', '" + txtdesc.Text + "'," +
+                    "'" + txtdia.Text.Replace(',', '.') + "')";
 
-            Comando = new SqlCommand(strsql, Conex);
-            Comando.ExecuteNonQuery();
+                Comando = new SqlCommand(strsql, Conex);
+                Comando.ExecuteNonQuery();
 
-            lblmensagem.Text = "Registro gravado";
-
-
-
+                lblmensagem.Text = "Registro Gravado";
+                txtcat.Clear();
+                txtdesc.Clear();
+                txtdia.Clear();
+            }
+            catch
+            {
+                lblmensagem.Text="Erro ao Gravar Registro";
+            }
         }
     }
 }
