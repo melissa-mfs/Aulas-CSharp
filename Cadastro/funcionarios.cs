@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace Cadastro
 {
-    public partial class Form2 : Form
+    public partial class funcionarios : Form
     {
         private SqlConnection Conex;
         private SqlCommand comand;
         private string strsql, strconex;
 
-        public Form2()
+        public funcionarios()
         {
             InitializeComponent();
         }

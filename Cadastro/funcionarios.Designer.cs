@@ -1,6 +1,6 @@
 ﻿namespace Cadastro
 {
-    partial class Form2
+    partial class funcionarios
     {
         /// <summary>
         /// Required designer variable.
