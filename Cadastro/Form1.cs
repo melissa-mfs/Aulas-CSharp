@@ -26,7 +26,7 @@ namespace Cadastro
 
         private void Btncadastrar_Click(object sender, EventArgs e)
         {
-            strsql =  $@"insert into categorias (marca, modelo, cor, placa, ano, imagem, codcatagoria) 
+            strsql =  $@"insert into veiculos (marca, modelo, cor, placa, ano, imagem, codcatagoria) 
                     values ('Ford', 'ka', 'prata', 'xxx-1239', '2018', 'ka.jpg', '1')";
         }
 
