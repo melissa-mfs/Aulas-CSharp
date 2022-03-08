@@ -17,6 +17,7 @@ namespace Cadastro
         private SqlConnection conn;
         private SqlDataAdapter adapter;
         private DataTable tblcategorias;
+        private SqlCommand comando;
         private string strconnex, strsql;
 
         public Form1()
@@ -26,8 +27,13 @@ namespace Cadastro
 
         private void Btncadastrar_Click(object sender, EventArgs e)
         {
-            strsql =  $@"insert into veiculos (marca, modelo, cor, placa, ano, imagem, codcatagoria) 
-                    values ('Ford', 'ka', 'prata', 'xxx-1239', '2018', 'ka.jpg', '1')";
+            strsql =  $@"insert into veiculos (marca, modelo, cor, placa, ano, imagem, codcategoria) 
+                    values ('{txtmarca}', '{txtmodelo}', '{txtcor}', '{txtplaca}', '{txtano}', '{txtimg}', '{chococategoria}')";
+            comando = new SqlCommand(strsql, conn);
+            comando.ExecuteNonQuery();
+
+            MessageBox.Show("Registro gravado", "Informação",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Form1_Load(object sender, EventArgs e)
