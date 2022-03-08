@@ -52,11 +52,11 @@
     <Compile Include="automoveis.Designer.cs">
       <DependentUpon>automoveis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="veiculos.Designer.cs">
+      <DependentUpon>veiculos.cs</DependentUpon>
     </Compile>
     <Compile Include="funcionarios.cs">
       <SubType>Form</SubType>
@@ -69,8 +69,8 @@
     <EmbeddedResource Include="automoveis.resx">
       <DependentUpon>automoveis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="veiculos.resx">
+      <DependentUpon>veiculos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="funcionarios.resx">
       <DependentUpon>funcionarios.cs</DependentUpon>

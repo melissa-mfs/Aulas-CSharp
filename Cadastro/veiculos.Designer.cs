@@ -1,6 +1,6 @@
 ﻿namespace Cadastro
 {
-    partial class Form1
+    partial class veiculos
     {
         /// <summary>
         /// Required designer variable.
@@ -206,8 +206,9 @@
             this.chococategoria.Name = "chococategoria";
             this.chococategoria.Size = new System.Drawing.Size(186, 30);
             this.chococategoria.TabIndex = 18;
+            this.chococategoria.SelectedIndexChanged += new System.EventHandler(this.Chococategoria_SelectedIndexChanged);
             // 
-            // Form1
+            // veiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -232,7 +233,7 @@
             this.Controls.Add(this.btncadastrar);
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "Form1";
+            this.Name = "veiculos";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picimg)).EndInit();
