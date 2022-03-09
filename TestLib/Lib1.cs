@@ -28,7 +28,7 @@ namespace TestLib
 
         public string Documento { get; set; }
 
-        NamePessoa Clone()
+        public NamePessoa Clone()
         {
             return new NamePessoa()
             {

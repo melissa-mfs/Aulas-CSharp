@@ -54,10 +54,10 @@ namespace Teste
             Lib1.TrocarNome(p1, "Melissa");
 
             label1.Text = $"Nome antigo: {antigo}, Novo: {p1.Nome} ";
-            
-            /*
-            BTN 4
-            
+        } // Label = Antigo: Mei Novo: Melissa
+
+        private void button4_Click(object sender, EventArgs e)
+        {
             NamePessoa p1 = new NamePessoa(); // inicializa a classe
             string antigo = "Mei";
 
@@ -65,9 +65,9 @@ namespace Teste
             p1.Idade = 20;
             p1.Documento = "1234";
 
-            NamePessoa p2 = Lib1.Clone(p1);
+            NamePessoa p2 = p1.Clone();
 
-            label1.Text = $"P1 nome: {p1.nome} \n P2 nome:{p2.nome}"*/
-        } // Label = Antigo: Mei Novo: Melissa
+            label1.Text = $"P1 nome: {p1.Nome} \n P2 nome:{p2.Nome}";
+        }
     }
 }
