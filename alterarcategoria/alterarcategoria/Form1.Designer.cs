@@ -47,6 +47,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Info;
             this.groupBox1.Controls.Add(this.btnalterar);
             this.groupBox1.Controls.Add(this.txtcodcat);
             this.groupBox1.Controls.Add(this.label1);
@@ -65,6 +66,7 @@
             this.btnalterar.TabIndex = 2;
             this.btnalterar.Text = "Alterar";
             this.btnalterar.UseVisualStyleBackColor = true;
+            this.btnalterar.Click += new System.EventHandler(this.Btnalterar_Click);
             // 
             // txtcodcat
             // 
@@ -86,6 +88,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox2.Controls.Add(this.txtvalor);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.btncancelar);
@@ -99,6 +102,7 @@
             this.groupBox2.Size = new System.Drawing.Size(776, 304);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Visible = false;
             // 
             // txtvalor
             // 
@@ -127,6 +131,7 @@
             this.btncancelar.TabIndex = 8;
             this.btncancelar.Text = "Cancelar";
             this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.Btncancelar_Click);
             // 
             // txtdesc
             // 
@@ -183,6 +188,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
