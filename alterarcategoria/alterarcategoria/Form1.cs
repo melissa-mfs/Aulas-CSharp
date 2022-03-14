@@ -16,5 +16,6 @@ namespace alterarcategoria
         {
             InitializeComponent();
         }
+
     }
 }
