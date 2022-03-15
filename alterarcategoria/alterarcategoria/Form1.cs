@@ -64,12 +64,22 @@ namespace alterarcategoria
         {
             //nao preciso abrir a conexao novamente, abriu no botao alterar ja
 
-            /*strsql = $@"update categorias set categoria='{txtcat.Text}', descricao='{txtdesc.Text}',
-                            valor='{txtvalor.Text}' where codcategoria='{txtcodcat.Text}'";*/
-            strsql = $@"update categorias set categoria='xxx', descricao='xxx',
-                            valor='11' where codcategoria='1'";
-            MessageBox.Show("Registro com sucesso", "informação",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                strsql = $@"update categorias set categoria='{txtcat.Text}', descricao='{txtdesc.Text}',
+                            valor='{txtvalor.Text}' where codcategoria='{txtcodcat.Text}'";
+
+                comando = new SqlCommand(strsql, conn);
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Registro com sucesso", "informação",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Não foi registro com sucesso", "informação",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void Btncancelar_Click(object sender, EventArgs e)
