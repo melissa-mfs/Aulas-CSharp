@@ -14,13 +14,42 @@ namespace TestLib
             return x + 20;
         }
 
-        public static void TrocarNome (NamePessoa p1, string nomeNovo)
+        public static void TrocarNome (Pessoa p1, string nomeNovo)
         {
             p1.Nome = nomeNovo;
         }
+
+        public static void MudarParaImpar(int[] pares)
+        {
+            for(int i = 0; i < pares.Length; i++)
+            {
+                pares[i] += 1; 
+            }
+        }
+
+        public static int Encontrarnumero(int[] numeros, int numero)
+        {
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                if (numeros[i] == numero)
+                    return i;
+            }
+            return -1;
+        }
+
+        //terminar
+        public static int EncontrarPessoa(list, int numero)
+        {
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                if (numeros[i] == numero)
+                    return i;
+            }
+            return -1;
+        }
     }
 
-    public class NamePessoa
+    public class Pessoa
     {
         public int Idade { get; set; }
 
@@ -28,15 +57,15 @@ namespace TestLib
 
         public string Documento { get; set; }
 
-        public NamePessoa Clone()
+        public Pessoa Clone()
         {
-            return new NamePessoa()
+            return new Pessoa()
             {
                 Idade = this.Idade,
                 Nome = this.Nome,
                 Documento = this.Documento
             };
-        } // falta dar exemplo no botão
+        } 
     }
 
 }

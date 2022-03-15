@@ -43,7 +43,7 @@ namespace Teste
 
         private void button3_Click(object sender, EventArgs e)
         {
-            NamePessoa p1 = new NamePessoa(); // inicializa a classe
+            Pessoa p1 = new Pessoa(); // inicializa a classe
             string antigo = "Mei";
 
 
@@ -58,16 +58,56 @@ namespace Teste
 
         private void button4_Click(object sender, EventArgs e)
         {
-            NamePessoa p1 = new NamePessoa(); // inicializa a classe
+            Pessoa p1 = new Pessoa(); // inicializa a classe
             string antigo = "Mei";
 
             p1.Nome = antigo;
             p1.Idade = 20;
             p1.Documento = "1234";
 
-            NamePessoa p2 = p1.Clone();
+            Pessoa p2 = p1.Clone();
 
             label1.Text = $"P1 nome: {p1.Nome} \n P2 nome:{p2.Nome}";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var pares = new int[] { 0, 2, 4, 6, 8 };
+
+            Lib1.MudarParaImpar(pares);
+
+            label1.Text = $"Impares: {string.Join(",", pares)}";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int[] numeros = new int[] { 0, 2, 4, 6, 8 };
+
+            var numero = int.Parse(textBox1.Text);
+            var idxEncontrado = Lib1.Encontrarnumero(numeros, numero);
+
+            if(idxEncontrado >= 0)
+            {
+                label1.Text = $"Posição:{idxEncontrado}";
+            }
+            else
+            {
+                label1.Text = "Número não encontrado";
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            List<Pessoa> pessoas = new List<Pessoa>()
+            {
+                new Pessoa(){Nome = "Ricardo"},
+                new Pessoa(){Nome = "José"},
+                new Pessoa(){Nome = "Rodrigo"},
+                new Pessoa(){Nome = "Day"},
+                new Pessoa(){Nome = "Carol"},
+            };
+
+            var nome = textBox2.Text;
         }
     }
 }
