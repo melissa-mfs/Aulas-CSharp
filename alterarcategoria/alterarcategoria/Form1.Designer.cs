@@ -160,6 +160,7 @@
             this.btngravar.TabIndex = 5;
             this.btngravar.Text = "Gravar";
             this.btngravar.UseVisualStyleBackColor = true;
+            this.btngravar.Click += new System.EventHandler(this.Btngravar_Click);
             // 
             // txtcat
             // 
@@ -187,6 +188,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);

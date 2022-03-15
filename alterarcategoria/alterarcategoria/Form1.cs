@@ -35,13 +35,41 @@ namespace alterarcategoria
         private void Btnalterar_Click(object sender, EventArgs e)
         {
             strconex = "data source=(local);initial catalog=locadora;integrated security=sspi";
-            Conex = new SqlConnection(strconex);
-            Conex.Open();
+            conn = new SqlConnection(strconex);
+            conn.Open();
 
+            tblcategorias = new DataTable();
 
+            strsql = $"select * from categorias where codcategoria = '{txtcodcat.Text}'";
+            adapter = new SqlDataAdapter(strsql, conn);
+            adapter.Fill(tblcategorias);
 
-            groupBox1.Enabled = false; //Desativado
-            groupBox2.Visible = true; //Visivel
+            if (tblcategorias.Rows.Count == 1)
+            {
+                groupBox1.Enabled = false; //Desativado
+                groupBox2.Visible = true; //Visivel
+
+                txtcat.Text = tblcategorias.Rows[0]["categoria"].ToString();
+                txtdesc.Text = tblcategorias.Rows[0]["descricao"].ToString();
+                txtvalor.Text = tblcategorias.Rows[0]["valor"].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Registro não existe", "informação",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void Btngravar_Click(object sender, EventArgs e)
+        {
+            //nao preciso abrir a conexao novamente, abriu no botao alterar ja
+
+            /*strsql = $@"update categorias set categoria='{txtcat.Text}', descricao='{txtdesc.Text}',
+                            valor='{txtvalor.Text}' where codcategoria='{txtcodcat.Text}'";*/
+            strsql = $@"update categorias set categoria='xxx', descricao='xxx',
+                            valor='11' where codcategoria='1'";
+            MessageBox.Show("Registro com sucesso", "informação",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Btncancelar_Click(object sender, EventArgs e)
