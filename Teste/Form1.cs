@@ -108,6 +108,16 @@ namespace Teste
             };
 
             var nome = textBox2.Text;
+            var pessoa = new Pessoa() { Nome = nome };
+            var encontrado = Lib1.EncontrarPessoa(pessoas, pessoa);
+            if (encontrado)
+            {
+                label1.Text = "Encontrado!";
+            }
+            else
+            {
+                label1.Text = "Não encontrado";
+            }
         }
     }
 }

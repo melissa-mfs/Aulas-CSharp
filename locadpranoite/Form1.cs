@@ -30,6 +30,11 @@ namespace locadpranoite
         
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void Btnenter_Click(object sender, EventArgs e)
         {
             strconn = "data source=(local); initial catalog = locadora; integrated security=sspi";

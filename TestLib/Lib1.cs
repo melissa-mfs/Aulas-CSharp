@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TestLib
 {
@@ -37,15 +38,13 @@ namespace TestLib
             return -1;
         }
 
-        //terminar
-        public static int EncontrarPessoa(list, int numero)
+        public static bool EncontrarPessoa(List<Pessoa> pessoas, Pessoa pessoa)
         {
-            for (int i = 0; i < numeros.Length; i++)
+            foreach (var item in pessoas)
             {
-                if (numeros[i] == numero)
-                    return i;
+                if (item.Nome == pessoa.Nome) return true;
             }
-            return -1;
+            return false;
         }
     }
 
