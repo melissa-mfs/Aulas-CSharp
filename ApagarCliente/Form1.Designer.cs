@@ -240,6 +240,7 @@
             this.btnnao.TabIndex = 6;
             this.btnnao.Text = "Não";
             this.btnnao.UseVisualStyleBackColor = true;
+            this.btnnao.Click += new System.EventHandler(this.Btnnao_Click);
             // 
             // txtcli
             // 

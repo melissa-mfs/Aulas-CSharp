@@ -26,11 +26,25 @@ namespace ApagarCliente
 
         private void Btnsim_Click(object sender, EventArgs e)
         {
-            strsql = $"delete from clientes where codcliente = '{txtcli.Text}'";
-            comando = new SqlCommand(strsql, conn);
-            comando.ExecuteNonQuery();
+            try
+            {
+                strsql = $"delete from clientes where codcliente = '{txtcli.Text}'";
+                comando = new SqlCommand(strsql, conn);
+                comando.ExecuteNonQuery();
+                grupo1.Enabled = true;
+                grupo2.Visible = false;
+            }
+            catch
+            {
+                MessageBox.Show("Erro ao excluir registro.", "Informação",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void Btnnao_Click(object sender, EventArgs e)
+        {
             grupo1.Enabled = true;
-            grupo2.Visible = false;
+            grupo2.Visible = fa;
         }
 
         private void Btnexcluir_Click(object sender, EventArgs e)
