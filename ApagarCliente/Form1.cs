@@ -17,7 +17,7 @@ namespace ApagarCliente
         private SqlConnection conn;
         private SqlDataAdapter adapter;
         private SqlCommand comando;
-        private DataTable tblcliente;
+        private DataTable tblclientes;
         private string strsql, strconex;
         public Form1()
         {
@@ -28,7 +28,7 @@ namespace ApagarCliente
         {
             try
             {
-                strsql = $"delete from clientes where codcliente = '{txtcli.Text}'";
+                strsql = $"delete from clientes where codcliente = '{txtcodcli.Text}'";
                 comando = new SqlCommand(strsql, conn);
                 comando.ExecuteNonQuery();
                 grupo1.Enabled = true;
@@ -44,7 +44,13 @@ namespace ApagarCliente
         private void Btnnao_Click(object sender, EventArgs e)
         {
             grupo1.Enabled = true;
-            grupo2.Visible = fa;
+            grupo2.Visible = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            grupo1.Enabled = true;
+            grupo2.Visible = false;
         }
 
         private void Btnexcluir_Click(object sender, EventArgs e)
@@ -53,24 +59,25 @@ namespace ApagarCliente
             conn = new SqlConnection(strconex);
             conn.Open();
 
-            tblcliente = new DataTable();
+            tblclientes = new DataTable();
 
-            strsql = $"select * from cliente where codcliente = {txtcodcli.Text}";
+            strsql = $"select * from clientes where codcliente = {txtcodcli.Text}";
             adapter = new SqlDataAdapter(strsql, conn);
-            adapter.Fill(tblcliente);
+            adapter.Fill(tblclientes);
 
-            if (tblcliente.Rows.Count == 1)
+            if (tblclientes.Rows.Count == 1)
             {
                 grupo1.Enabled = false;
                 grupo2.Visible = true;
 
-                txtcli.Text = tblcliente.Rows[0]["cliente"].ToString();
-                txtendereco.Text = tblcliente.Rows[0]["endereco"].ToString();
-                txtbairro.Text = tblcliente.Rows[0]["bairro"].ToString();
-                txtestado.Text = tblcliente.Rows[0]["estado"].ToString();
-                txtpais.Text = tblcliente.Rows[0]["pais"].ToString();
-                txtdatanasc.Text = tblcliente.Rows[0]["datanasc"].ToString ();
-                txtcnh.Text = tblcliente.Rows[0]["cnh"].ToString();
+                txtcli.Text = tblclientes.Rows[0]["cliente"].ToString();
+                txtendereco.Text = tblclientes.Rows[0]["endereco"].ToString();
+                txtcidade.Text = tblclientes.Rows[0]["cidade"].ToString();
+                txtbairro.Text = tblclientes.Rows[0]["bairro"].ToString();
+                txtestado.Text = tblclientes.Rows[0]["estado"].ToString();
+                txtpais.Text = tblclientes.Rows[0]["pais"].ToString();
+                txtdatanasc.Text = tblclientes.Rows[0]["datanasc"].ToString ();
+                txtcnh.Text = tblclientes.Rows[0]["cnh"].ToString();
             }
             else
             {
