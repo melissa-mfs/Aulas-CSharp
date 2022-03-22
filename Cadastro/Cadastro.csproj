@@ -52,6 +52,12 @@
     <Compile Include="automoveis.Designer.cs">
       <DependentUpon>automoveis.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExcluirVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirVeiculo.Designer.cs">
+      <DependentUpon>ExcluirVeiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="automoveis.resx">
       <DependentUpon>automoveis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirVeiculo.resx">
+      <DependentUpon>ExcluirVeiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="veiculos.resx">
       <DependentUpon>veiculos.cs</DependentUpon>
