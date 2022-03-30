@@ -65,27 +65,32 @@ select day(getdate()); --Dia
 select month(getdate()); --Mês
 select year(getdate()); --Ano
 
-select DATEPART(yy, getdate());
-select DATEPART(mm, getdate());
-select DATEPART(dy, getdate());
-select DATEPART(hh, getdate());
-select DATEPART(mi, getdate());
-select DATEPART(ss, getdate());
-select DATEPART(ms, getdate());
-select DATEPART(ns, getdate());
+select DATEPART(yy, getdate()); --ano
+select DATEPART(mm, getdate()); --mês
+select DATEPART(dy, getdate()); --dias
+select DATEPART(hh, getdate()); --horas
+select DATEPART(mi, getdate()); --minutos
+select DATEPART(ss, getdate()); --segundos
+select DATEPART(ms, getdate()); --milisegundos
+select DATEPART(ns, getdate()); --nanosegundos
 
-select datepart(dy, '12/11/1990');
-select datepart(dw, '12/11/1990');
+select datepart(dy, '12/11/1990'); --dia do ano
+select datepart(dw, '12/11/1990'); --dia da semana
 
-select datename(mm, '12/11/1990');
-select datename(dw, '12/11/1990');
+select datename(mm, '12/11/1990'); --nome do mês
+select datename(dw, '12/11/1990'); --nome dia da semana
 
 -----------------------------------
+--Data, nome do dia da semana
 select orderdate, datename(dw,orderdate) from Orders;
 
+--Nome do produtos, preço unitário, preço elevado a 2
 select ProductName, UnitPrice, power(UnitPrice,2) from products;
 
-select dateadd(ss,1000000, '12/11/1990');
-select dateadd(dd,200,getdate());
+select dateadd(ss,1000000, '12/11/1990'); --add ss a data
+select dateadd(dd,200,getdate());  --add dd a data
 
-select datediff(yy,'12/11/1990', getdate());
+select datediff(yy,'12/11/1990', getdate()); --Quantos anos fazem
+
+select datediff(dd,getdate(),'12/11/2022'); --Quantos dias faltam 
+select datediff(hh,getdate(),'12/11/2022'); --Quantas horas faltam
