@@ -1,29 +1,29 @@
 --------------------------
-----FUN«’ES DE SISTEMA----
+----FUN√á≈êES DE SISTEMA----
 --------------------------
 
---FUN«’ES MATEM¡TICAS
+--FUN√á≈êES MATEM√ÅTICAS
 
-select ABS(5);
+select ABS(5); --retorna o valor absoluto (positivo)
 select ABS(+5);
 select ABS(-5);
 select ABS(0);
 
-select sign(5);
+select sign(5); --Retorna o sinal (+1), (0) ou (-1).
 select sign(+5);
 select sign(-5);
 select sign(0);
 
-select sin(5);
-select cos(5);
-select tan(5);
+select sin(5); --seno
+select cos(5); --cosseno
+select tan(5); --tangente
 
-select Asin(50);
-select Acos(50);
-select Atan(50);
-select Atn2(50,40);
-select Radians(5);
-select DEGREES(5);
+select Asin(50); --arco seno
+select Acos(50); --arco cosseno
+select Atan(50); --arco tangente
+select Atn2(50,40); --angulo em radianos
+select Radians(5); 
+select DEGREES(5); --angulo em graus de um angulo em radiano
 select log(32,2);
 select log10(100);
 
@@ -40,20 +40,20 @@ select pi()* power (5,2) * 20;
 select pi()* power(5,2) *20*1000*7
 select 3.14* power(5,2) *20*1000*7
 
-select ceiling(2.65);
+select ceiling(2.65); --retorna o menor inteiro
 select ceiling(2.0000001);
 
-select floor(2.65);
+select floor(2.65); --retorna o maior inteiro
 select floor(2.9999999999);
 
-select round(2.4568,2);
+select round(2.4568,2); --arredonda com especifica√ß√£o de casa
 select round(2.4568,2);
 
 
 select square(5);
 
 --------------------------
---FUN«’ES DE DATA E HORA--
+--FUN√á≈êES DE DATA E HORA--
 --------------------------
 
 select getdate(); --AA/MM/DD HH:MM:SS:MS
@@ -62,11 +62,11 @@ select SYSUTCDATETIME();
 select SYSDATETIMEOFFSET();
 
 select day(getdate()); --Dia
-select month(getdate()); --MÍs
+select month(getdate()); --Mƒôs
 select year(getdate()); --Ano
 
 select DATEPART(yy, getdate()); --ano
-select DATEPART(mm, getdate()); --mÍs
+select DATEPART(mm, getdate()); --mƒôs
 select DATEPART(dy, getdate()); --dias
 select DATEPART(hh, getdate()); --horas
 select DATEPART(mi, getdate()); --minutos
@@ -77,14 +77,14 @@ select DATEPART(ns, getdate()); --nanosegundos
 select datepart(dy, '12/11/1990'); --dia do ano
 select datepart(dw, '12/11/1990'); --dia da semana
 
-select datename(mm, '12/11/1990'); --nome do mÍs
+select datename(mm, '12/11/1990'); --nome do mƒôs
 select datename(dw, '12/11/1990'); --nome dia da semana
 
 -----------------------------------
 --Data, nome do dia da semana
 select orderdate, datename(dw,orderdate) from Orders;
 
---Nome do produtos, preÁo unit·rio, preÁo elevado a 2
+--Nome do produtos, pre√ßo unit√°rio, pre√ßo elevado a 2
 select ProductName, UnitPrice, power(UnitPrice,2) from products;
 
 select dateadd(ss,1000000, '12/11/1990'); --add ss a data
