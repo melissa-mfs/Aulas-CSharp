@@ -1,10 +1,14 @@
+Create database LocadoraLivros
+use LocadoraLivros
+
 create table Amigos(
 	CodAmigo int,
 	Nome nvarchar(30),
 	Endereco nvarchar(50),
 	Bairro nvarchar(30),
 	Cidade nvarchar(30),
-	telefone nvarchar(9)
+	telefone nvarchar(9),
+	Constraint PK_Amigo Primary Key (CodAmigo)
 );
 
 Create table Livros(
@@ -12,12 +16,30 @@ Create table Livros(
 	Titulo nvarchar(50),
 	Autor nvarchar(30),
 	Editora nvarchar(30),
-	CodAmigo int
+	Constraint PK_Livro Primary Key (CodLivro)
 );
 
-Create table emprestimos(
+Create table Emprestimos(
 	CodLivro int,
 	CodAmigo int,
-	DataEmprestimo nvarchar(10),
-	DataDevolucao nvarchar(10)
+	DataEmprestimo date,
+	DataDevolucao date,
+	Constraint PK_Emprestimo Primary Key (CodLivro, CodAmigo),
+	Constraint FK_Amigo Foreign Key (CodAmigo)
+	References Amigos(CodAmigo),
+	Constraint FK_Livro Foreign Key (CodLivro)
+	References Livros(CodLivro)
 );
+
+Insert Into Amigos Values
+	('1', 'Anthony', 'Rua Exemplo', 'Bairro Exemplo', 'Cidade Exemplo', '900000000');
+
+Insert Into Livros Values
+	('1', 'Titulo Exemplo', 'Autor Exemplo', 'Editora Exemplo');
+
+Insert into Emprestimos Values
+	('1', '1', '24/05/2022', '25/05/2022')
+
+select * from Amigos
+select * from Livros
+select * from Emprestimos
