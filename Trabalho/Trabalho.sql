@@ -7,7 +7,7 @@ create table Amigos(
 	Endereco nvarchar(50),
 	Bairro nvarchar(30),
 	Cidade nvarchar(30),
-	telefone nvarchar(9),
+	Telefone nvarchar(9),
 	Constraint PK_Amigo Primary Key (CodAmigo)
 );
 
