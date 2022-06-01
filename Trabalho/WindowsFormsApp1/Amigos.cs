@@ -58,6 +58,8 @@ namespace WindowsFormsApp1
             catch
             {
                 //colocar uma msgbox com msg de erro no cadastro
+                MessageBox.Show("Cadastro não realizado", "Erro ao Cadastrar",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
