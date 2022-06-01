@@ -116,7 +116,7 @@
             // 
             this.btcadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btcadastrar.Location = new System.Drawing.Point(40, 476);
-            this.btcadastrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btcadastrar.Margin = new System.Windows.Forms.Padding(4);
             this.btcadastrar.Name = "btcadastrar";
             this.btcadastrar.Size = new System.Drawing.Size(185, 49);
             this.btcadastrar.TabIndex = 6;
@@ -128,7 +128,7 @@
             // 
             this.btcancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btcancelar.Location = new System.Drawing.Point(452, 476);
-            this.btcancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btcancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btcancelar.Name = "btcancelar";
             this.btcancelar.Size = new System.Drawing.Size(185, 49);
             this.btcancelar.TabIndex = 7;
@@ -140,7 +140,7 @@
             // 
             this.txtnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnome.Location = new System.Drawing.Point(301, 167);
-            this.txtnome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtnome.Margin = new System.Windows.Forms.Padding(4);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(325, 41);
             this.txtnome.TabIndex = 8;
@@ -149,7 +149,7 @@
             // 
             this.txtend.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtend.Location = new System.Drawing.Point(301, 217);
-            this.txtend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtend.Margin = new System.Windows.Forms.Padding(4);
             this.txtend.Name = "txtend";
             this.txtend.Size = new System.Drawing.Size(325, 41);
             this.txtend.TabIndex = 9;
@@ -158,7 +158,7 @@
             // 
             this.txtbairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbairro.Location = new System.Drawing.Point(301, 264);
-            this.txtbairro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbairro.Margin = new System.Windows.Forms.Padding(4);
             this.txtbairro.Name = "txtbairro";
             this.txtbairro.Size = new System.Drawing.Size(325, 41);
             this.txtbairro.TabIndex = 10;
@@ -167,7 +167,7 @@
             // 
             this.txtcid.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcid.Location = new System.Drawing.Point(301, 314);
-            this.txtcid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtcid.Margin = new System.Windows.Forms.Padding(4);
             this.txtcid.Name = "txtcid";
             this.txtcid.Size = new System.Drawing.Size(325, 41);
             this.txtcid.TabIndex = 11;
@@ -176,7 +176,7 @@
             // 
             this.txttel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttel.Location = new System.Drawing.Point(301, 365);
-            this.txttel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttel.Margin = new System.Windows.Forms.Padding(4);
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(325, 41);
             this.txttel.TabIndex = 12;
@@ -185,7 +185,7 @@
             // 
             this.btLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.btLimpar.Location = new System.Drawing.Point(242, 476);
-            this.btLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btLimpar.Margin = new System.Windows.Forms.Padding(4);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(185, 49);
             this.btLimpar.TabIndex = 13;
@@ -238,10 +238,9 @@
             this.Controls.Add(this.lblend);
             this.Controls.Add(this.lblnome);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Amigos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4";
             this.ResumeLayout(false);
             this.PerformLayout();
 

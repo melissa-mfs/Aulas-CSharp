@@ -46,7 +46,7 @@
             // 
             this.txttitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttitulo.Location = new System.Drawing.Point(279, 165);
-            this.txttitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttitulo.Margin = new System.Windows.Forms.Padding(4);
             this.txttitulo.Name = "txttitulo";
             this.txttitulo.Size = new System.Drawing.Size(277, 41);
             this.txttitulo.TabIndex = 2;
@@ -55,7 +55,7 @@
             // 
             this.txtautor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtautor.Location = new System.Drawing.Point(279, 223);
-            this.txtautor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtautor.Margin = new System.Windows.Forms.Padding(4);
             this.txtautor.Name = "txtautor";
             this.txtautor.Size = new System.Drawing.Size(277, 41);
             this.txtautor.TabIndex = 3;
@@ -64,7 +64,7 @@
             // 
             this.txteditora.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txteditora.Location = new System.Drawing.Point(279, 279);
-            this.txteditora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txteditora.Margin = new System.Windows.Forms.Padding(4);
             this.txteditora.Name = "txteditora";
             this.txteditora.Size = new System.Drawing.Size(277, 41);
             this.txteditora.TabIndex = 4;
@@ -117,7 +117,7 @@
             // 
             this.btcadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btcadastrar.Location = new System.Drawing.Point(28, 378);
-            this.btcadastrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btcadastrar.Margin = new System.Windows.Forms.Padding(4);
             this.btcadastrar.Name = "btcadastrar";
             this.btcadastrar.Size = new System.Drawing.Size(185, 49);
             this.btcadastrar.TabIndex = 10;
@@ -129,7 +129,7 @@
             // 
             this.btcancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btcancelar.Location = new System.Drawing.Point(416, 378);
-            this.btcancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btcancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btcancelar.Name = "btcancelar";
             this.btcancelar.Size = new System.Drawing.Size(185, 49);
             this.btcancelar.TabIndex = 11;
@@ -141,7 +141,7 @@
             // 
             this.btlimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btlimpar.Location = new System.Drawing.Point(223, 378);
-            this.btlimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btlimpar.Margin = new System.Windows.Forms.Padding(4);
             this.btlimpar.Name = "btlimpar";
             this.btlimpar.Size = new System.Drawing.Size(185, 49);
             this.btlimpar.TabIndex = 12;
@@ -186,10 +186,9 @@
             this.Controls.Add(this.txteditora);
             this.Controls.Add(this.txtautor);
             this.Controls.Add(this.txttitulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Livros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();
 

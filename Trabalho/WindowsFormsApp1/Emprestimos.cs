@@ -59,14 +59,27 @@ namespace WindowsFormsApp1
         private void btConsulta_Click(object sender, EventArgs e)
         {
             //Ir para tela de consultas
+            var Consulta = new Consulta();
+            Consulta.Show();
         }
 
         private void CalendEmp_DateChanged(object sender, DateRangeEventArgs e)
         {
-            //selecioa a data inicio e coloca no txtdtemp
-            this.txtdtemp.Text = calendEmp.SelectionRange.Start.Date.ToShortDateString();
-            //seleciona a data final e coloca na txtdtdev
-            this.txtdtdev.Text = calendEmp.SelectionRange.End.Date.ToShortDateString();
+            DateTime datamintoday = DateTime.Today;
+            DateTime datamin = calendEmp.SelectionRange.Start.Date;
+            if (datamintoday > datamin)
+            {
+                MessageBox.Show("Selecione uma data a partir de Hoje","Data Inválida",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                //seleciona a data inicio e coloca no txtdtemp
+                this.txtdtemp.Text = calendEmp.SelectionRange.Start.Date.ToShortDateString();
+                //seleciona a data final e coloca na txtdtdev
+                this.txtdtdev.Text = calendEmp.SelectionRange.End.Date.ToShortDateString();
+                //Console.WriteLine($"{datamin}, {txtdtdev.Text}");
+            };
         }
     }
 }

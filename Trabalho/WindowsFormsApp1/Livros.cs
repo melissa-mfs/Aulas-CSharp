@@ -23,10 +23,10 @@ namespace WindowsFormsApp1
 
         private void Btlimpar_Click(object sender, EventArgs e)
         {
+            txtCodLivro.Clear();
             txteditora.Clear();
             txttitulo.Clear();
             txtautor.Clear();
-
         }
 
         private void Btcadastrar_Click(object sender, EventArgs e)
@@ -49,6 +49,9 @@ namespace WindowsFormsApp1
             catch
             {
                 //colocar uma msgbox com msg de erro no cadastro
+                MessageBox.Show("Cadastro não realizado","Erro ao Cadastrar",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
             }
         }
     }

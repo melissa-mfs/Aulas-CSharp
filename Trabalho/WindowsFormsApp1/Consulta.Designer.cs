@@ -169,7 +169,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Consulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form5";
             this.grupo3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgConsulta)).EndInit();
             this.grupo1.ResumeLayout(false);

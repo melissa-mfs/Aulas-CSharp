@@ -175,7 +175,6 @@
             // 
             this.calendEmp.Location = new System.Drawing.Point(644, 95);
             this.calendEmp.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
-            this.calendEmp.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.calendEmp.MinDate = new System.DateTime(2022, 5, 1, 0, 0, 0, 0);
             this.calendEmp.Name = "calendEmp";
             this.calendEmp.TabIndex = 21;
@@ -198,7 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 428);
+            this.ClientSize = new System.Drawing.Size(956, 428);
             this.Controls.Add(this.btConsulta);
             this.Controls.Add(this.calendEmp);
             this.Controls.Add(this.btlimpar);
@@ -216,7 +215,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Emprestimos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -23,10 +23,14 @@ namespace WindowsFormsApp1
                 var Emprestimos = new Emprestimos();
                 Emprestimos.Show();
             }
-            else
+            else if (rbtlivros.Checked == true)
             {
                 var Livros = new Livros();
                 Livros.Show();
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma opção", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }

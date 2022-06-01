@@ -39,8 +39,8 @@
             // 
             this.rbtamigos.AutoSize = true;
             this.rbtamigos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtamigos.Location = new System.Drawing.Point(152, 140);
-            this.rbtamigos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtamigos.Location = new System.Drawing.Point(133, 119);
+            this.rbtamigos.Margin = new System.Windows.Forms.Padding(4);
             this.rbtamigos.Name = "rbtamigos";
             this.rbtamigos.Size = new System.Drawing.Size(142, 40);
             this.rbtamigos.TabIndex = 5;
@@ -50,14 +50,12 @@
             // rbtemprestimos
             // 
             this.rbtemprestimos.AutoSize = true;
-            this.rbtemprestimos.Checked = true;
             this.rbtemprestimos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtemprestimos.Location = new System.Drawing.Point(152, 188);
-            this.rbtemprestimos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtemprestimos.Location = new System.Drawing.Point(133, 235);
+            this.rbtemprestimos.Margin = new System.Windows.Forms.Padding(4);
             this.rbtemprestimos.Name = "rbtemprestimos";
             this.rbtemprestimos.Size = new System.Drawing.Size(218, 40);
             this.rbtemprestimos.TabIndex = 6;
-            this.rbtemprestimos.TabStop = true;
             this.rbtemprestimos.Text = "Empréstimos";
             this.rbtemprestimos.UseVisualStyleBackColor = true;
             // 
@@ -65,8 +63,8 @@
             // 
             this.rbtlivros.AutoSize = true;
             this.rbtlivros.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtlivros.Location = new System.Drawing.Point(152, 238);
-            this.rbtlivros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtlivros.Location = new System.Drawing.Point(133, 178);
+            this.rbtlivros.Margin = new System.Windows.Forms.Padding(4);
             this.rbtlivros.Name = "rbtlivros";
             this.rbtlivros.Size = new System.Drawing.Size(123, 40);
             this.rbtlivros.TabIndex = 7;
@@ -77,7 +75,7 @@
             // 
             this.btavancar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btavancar.Location = new System.Drawing.Point(133, 347);
-            this.btavancar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btavancar.Margin = new System.Windows.Forms.Padding(4);
             this.btavancar.Name = "btavancar";
             this.btavancar.Size = new System.Drawing.Size(185, 49);
             this.btavancar.TabIndex = 10;
@@ -96,7 +94,7 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Cadastrar";
             // 
-            // Menu
+            // LocadoraMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -106,10 +104,9 @@
             this.Controls.Add(this.rbtlivros);
             this.Controls.Add(this.rbtemprestimos);
             this.Controls.Add(this.rbtamigos);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Menu";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "LocadoraMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
