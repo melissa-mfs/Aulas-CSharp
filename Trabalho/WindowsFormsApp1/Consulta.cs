@@ -14,16 +14,15 @@ namespace WindowsFormsApp1
         public Consulta()
         {
             InitializeComponent();
+            strconex = "data source=MEI\\SQLEXPRESS;initial catalog=LocadoraLivros;integrated security=sspi";
+            Conex = new SqlConnection(strconex);
+            Conex.Open();
         }
 
-         private void btConsultaLivro_Click(object sender, EventArgs e)
+        private void btConsultaLivro_Click(object sender, EventArgs e)
         {
             try
             {
-                strconex = "data source=(local); initial catalog=LocadoraLivros;integrated security=sspi";
-                Conex = new SqlConnection(strconex);
-                Conex.Open();
-
                 //Consulta no Banco de dados
                 strsql = $@"Select ";
 
@@ -38,10 +37,6 @@ namespace WindowsFormsApp1
         {
             try
             {
-                strconex = "data source=(local); initial catalog=LocadoraLivros;integrated security=sspi";
-                Conex = new SqlConnection(strconex);
-                Conex.Open();
-
                 //Consulta no Banco de dados
                 strsql = $@"Select ";
 

@@ -177,6 +177,7 @@
             this.calendEmp.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.calendEmp.MinDate = new System.DateTime(2022, 5, 1, 0, 0, 0, 0);
             this.calendEmp.Name = "calendEmp";
+            this.calendEmp.ShowTodayCircle = false;
             this.calendEmp.TabIndex = 21;
             this.calendEmp.TodayDate = new System.DateTime(2022, 5, 31, 0, 0, 0, 0);
             this.calendEmp.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.CalendEmp_DateChanged);

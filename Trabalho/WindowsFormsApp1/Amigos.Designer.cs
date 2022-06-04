@@ -208,14 +208,13 @@
             // 
             this.lblCodAmigo.AutoSize = true;
             this.lblCodAmigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodAmigo.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblCodAmigo.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lblCodAmigo.Location = new System.Drawing.Point(295, 125);
             this.lblCodAmigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodAmigo.Name = "lblCodAmigo";
             this.lblCodAmigo.Size = new System.Drawing.Size(33, 36);
             this.lblCodAmigo.TabIndex = 15;
             this.lblCodAmigo.Text = "1";
-            this.lblCodAmigo.Click += new System.EventHandler(this.lblCodAmigo_Click);
             // 
             // Amigos
             // 

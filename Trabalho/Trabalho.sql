@@ -32,14 +32,16 @@ Create table Emprestimos(
 );
 
 Insert Into Amigos Values
-	('1', 'Anthony', 'Rua Exemplo', 'Bairro Exemplo', 'Cidade Exemplo', '900000000');
+	('2', 'Anthony', 'Rua Exemplo', 'Bairro Exemplo', 'Cidade Exemplo', '900000000');
 
 Insert Into Livros Values
 	('1', 'Titulo Exemplo', 'Autor Exemplo', 'Editora Exemplo');
 
 Insert into Emprestimos Values
-	('1', '1', '24/05/2022', '25/05/2022')
+	('21', '1', '24/05/2022', '25/05/2022')
 
 select * from Amigos
 select * from Livros
 select * from Emprestimos
+
+Select CodAmigo from Amigos where CodAmigo = (select max(CodAmigo) from Amigos);

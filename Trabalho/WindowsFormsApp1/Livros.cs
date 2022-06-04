@@ -34,17 +34,27 @@ namespace WindowsFormsApp1
             try
             {
                 //Conecta com o Banco de dados
-                strconex = "data source=(local); initial catalog=LocadoraLivros;integrated security=sspi";
+                strconex = "data source=MEI\\SQLEXPRESS;initial catalog=LocadoraLivros;integrated security=sspi";
                 Conex = new SqlConnection(strconex);
                 Conex.Open();
 
                 //faz inserção dos campos de acordo com o Banco de dados
                 strsql = $@"insert into Livros(CodLivro, Titulo, Autor, Editora)
-                            values ({txtCodLivro},{txttitulo},{txtautor},{txteditora});";
+                            values ('{txtCodLivro.Text}','{txttitulo.Text}','{txtautor.Text}','{txteditora.Text}');";
 
                 //executa o comando de consulta no banco
                 comand = new SqlCommand(strsql, Conex);
                 comand.ExecuteNonQuery();
+
+                //limpa as txtbx
+                txtCodLivro.Clear();
+                txteditora.Clear();
+                txttitulo.Clear();
+                txtautor.Clear();
+
+                //colocar uma msgbox com msg de Sucesso
+                MessageBox.Show("Cadastro realizado com Sucesso!", "Sucesso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {
