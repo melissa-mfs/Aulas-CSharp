@@ -45,3 +45,9 @@ select * from Livros
 select * from Emprestimos
 
 Select CodAmigo from Amigos where CodAmigo = (select max(CodAmigo) from Amigos);
+
+Select Amigos.CodAmigo, Amigos.Nome, Livros.CodLivro, Livros.Titulo, 
+Emprestimos.DataEmprestimo, Emprestimos.DataDevolucao from Amigos 
+inner join Emprestimos on Amigos.CodAmigo = Emprestimos.CodAmigo
+inner join Livros on Emprestimos.CodLivro = Livros.CodLivro
+where Livros.Titulo like '%Anime%' or Livros.CodLivro = '1';

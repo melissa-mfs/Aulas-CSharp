@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
 
                 //faz inserção dos campos de acordo com o Banco de dados
                 strsql = $@"insert into Emprestimos(CodLivro, CodAmigo, DataEmprestimo, DataDevolucao)
-                            values ({txtcodl},{txtcoda},{txtdtemp},{txtdtdev});";
+                            values ('{txtcodl.Text}','{txtcoda.Text}','{txtdtemp.Text}','{txtdtdev.Text}');";
 
                 //executa o comando de consulta no banco
                 comand = new SqlCommand(strsql, Conex);

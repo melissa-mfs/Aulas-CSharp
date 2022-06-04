@@ -31,13 +31,12 @@
             this.grupo3 = new System.Windows.Forms.GroupBox();
             this.dgConsulta = new System.Windows.Forms.DataGridView();
             this.grupo1 = new System.Windows.Forms.GroupBox();
-            this.btConsultaLivro = new System.Windows.Forms.Button();
-            this.txtcodcategoria = new System.Windows.Forms.TextBox();
+            this.txtcodnome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btConsultaData = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtdataempdev = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btConsulta = new System.Windows.Forms.Button();
             this.grupo3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgConsulta)).BeginInit();
             this.grupo1.SuspendLayout();
@@ -68,38 +67,25 @@
             // 
             // grupo1
             // 
-            this.grupo1.Controls.Add(this.btConsultaLivro);
-            this.grupo1.Controls.Add(this.txtcodcategoria);
+            this.grupo1.Controls.Add(this.txtcodnome);
             this.grupo1.Controls.Add(this.label1);
             this.grupo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grupo1.Location = new System.Drawing.Point(40, 24);
             this.grupo1.Margin = new System.Windows.Forms.Padding(4);
             this.grupo1.Name = "grupo1";
             this.grupo1.Padding = new System.Windows.Forms.Padding(4);
-            this.grupo1.Size = new System.Drawing.Size(1050, 96);
+            this.grupo1.Size = new System.Drawing.Size(739, 96);
             this.grupo1.TabIndex = 2;
             this.grupo1.TabStop = false;
             // 
-            // btConsultaLivro
+            // txtcodnome
             // 
-            this.btConsultaLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultaLivro.Location = new System.Drawing.Point(829, 35);
-            this.btConsultaLivro.Margin = new System.Windows.Forms.Padding(4);
-            this.btConsultaLivro.Name = "btConsultaLivro";
-            this.btConsultaLivro.Size = new System.Drawing.Size(185, 49);
-            this.btConsultaLivro.TabIndex = 2;
-            this.btConsultaLivro.Text = "Consultar";
-            this.btConsultaLivro.UseVisualStyleBackColor = true;
-            this.btConsultaLivro.Click += new System.EventHandler(this.btConsultaLivro_Click);
-            // 
-            // txtcodcategoria
-            // 
-            this.txtcodcategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcodcategoria.Location = new System.Drawing.Point(353, 46);
-            this.txtcodcategoria.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcodcategoria.Name = "txtcodcategoria";
-            this.txtcodcategoria.Size = new System.Drawing.Size(372, 34);
-            this.txtcodcategoria.TabIndex = 1;
+            this.txtcodnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcodnome.Location = new System.Drawing.Point(353, 46);
+            this.txtcodnome.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcodnome.Name = "txtcodnome";
+            this.txtcodnome.Size = new System.Drawing.Size(372, 34);
+            this.txtcodnome.TabIndex = 1;
             // 
             // label1
             // 
@@ -114,38 +100,25 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btConsultaData);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtdataempdev);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(40, 128);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1050, 103);
+            this.groupBox2.Size = new System.Drawing.Size(739, 103);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
-            // btConsultaData
+            // txtdataempdev
             // 
-            this.btConsultaData.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultaData.Location = new System.Drawing.Point(829, 35);
-            this.btConsultaData.Margin = new System.Windows.Forms.Padding(4);
-            this.btConsultaData.Name = "btConsultaData";
-            this.btConsultaData.Size = new System.Drawing.Size(185, 49);
-            this.btConsultaData.TabIndex = 2;
-            this.btConsultaData.Text = "Consultar";
-            this.btConsultaData.UseVisualStyleBackColor = true;
-            this.btConsultaData.Click += new System.EventHandler(this.btConsultaData_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(353, 46);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(372, 34);
-            this.textBox1.TabIndex = 1;
+            this.txtdataempdev.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdataempdev.Location = new System.Drawing.Point(353, 46);
+            this.txtdataempdev.Margin = new System.Windows.Forms.Padding(4);
+            this.txtdataempdev.Name = "txtdataempdev";
+            this.txtdataempdev.Size = new System.Drawing.Size(372, 34);
+            this.txtdataempdev.TabIndex = 1;
             // 
             // label5
             // 
@@ -158,11 +131,24 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Empréstimo por data:";
             // 
+            // btConsulta
+            // 
+            this.btConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConsulta.Location = new System.Drawing.Point(869, 110);
+            this.btConsulta.Margin = new System.Windows.Forms.Padding(4);
+            this.btConsulta.Name = "btConsulta";
+            this.btConsulta.Size = new System.Drawing.Size(185, 49);
+            this.btConsulta.TabIndex = 2;
+            this.btConsulta.Text = "Consultar";
+            this.btConsulta.UseVisualStyleBackColor = true;
+            this.btConsulta.Click += new System.EventHandler(this.btConsulta_Click);
+            // 
             // Consulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 721);
+            this.Controls.Add(this.btConsulta);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grupo3);
             this.Controls.Add(this.grupo1);
@@ -183,13 +169,12 @@
 
         private System.Windows.Forms.GroupBox grupo3;
         private System.Windows.Forms.GroupBox grupo1;
-        private System.Windows.Forms.Button btConsultaLivro;
-        private System.Windows.Forms.TextBox txtcodcategoria;
+        private System.Windows.Forms.TextBox txtcodnome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btConsultaData;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtdataempdev;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgConsulta;
+        private System.Windows.Forms.Button btConsulta;
     }
 }
