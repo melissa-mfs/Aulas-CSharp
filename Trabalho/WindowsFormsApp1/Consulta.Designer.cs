@@ -36,7 +36,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtdataempdev = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btConsulta = new System.Windows.Forms.Button();
+            this.btConsultaLivro = new System.Windows.Forms.Button();
+            this.btConsultaData = new System.Windows.Forms.Button();
             this.grupo3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgConsulta)).BeginInit();
             this.grupo1.SuspendLayout();
@@ -67,6 +68,7 @@
             // 
             // grupo1
             // 
+            this.grupo1.Controls.Add(this.btConsultaLivro);
             this.grupo1.Controls.Add(this.txtcodnome);
             this.grupo1.Controls.Add(this.label1);
             this.grupo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,7 +76,7 @@
             this.grupo1.Margin = new System.Windows.Forms.Padding(4);
             this.grupo1.Name = "grupo1";
             this.grupo1.Padding = new System.Windows.Forms.Padding(4);
-            this.grupo1.Size = new System.Drawing.Size(739, 96);
+            this.grupo1.Size = new System.Drawing.Size(1050, 96);
             this.grupo1.TabIndex = 2;
             this.grupo1.TabStop = false;
             // 
@@ -100,6 +102,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btConsultaData);
             this.groupBox2.Controls.Add(this.txtdataempdev);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,7 +110,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(739, 103);
+            this.groupBox2.Size = new System.Drawing.Size(1050, 103);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
@@ -131,24 +134,35 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Empréstimo por data:";
             // 
-            // btConsulta
+            // btConsultaLivro
             // 
-            this.btConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsulta.Location = new System.Drawing.Point(869, 110);
-            this.btConsulta.Margin = new System.Windows.Forms.Padding(4);
-            this.btConsulta.Name = "btConsulta";
-            this.btConsulta.Size = new System.Drawing.Size(185, 49);
-            this.btConsulta.TabIndex = 2;
-            this.btConsulta.Text = "Consultar";
-            this.btConsulta.UseVisualStyleBackColor = true;
-            this.btConsulta.Click += new System.EventHandler(this.btConsulta_Click);
+            this.btConsultaLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConsultaLivro.Location = new System.Drawing.Point(829, 29);
+            this.btConsultaLivro.Margin = new System.Windows.Forms.Padding(4);
+            this.btConsultaLivro.Name = "btConsultaLivro";
+            this.btConsultaLivro.Size = new System.Drawing.Size(185, 49);
+            this.btConsultaLivro.TabIndex = 2;
+            this.btConsultaLivro.Text = "Consultar";
+            this.btConsultaLivro.UseVisualStyleBackColor = true;
+            this.btConsultaLivro.Click += new System.EventHandler(this.btConsultaLivro_Click);
+            // 
+            // btConsultaData
+            // 
+            this.btConsultaData.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConsultaData.Location = new System.Drawing.Point(829, 31);
+            this.btConsultaData.Margin = new System.Windows.Forms.Padding(4);
+            this.btConsultaData.Name = "btConsultaData";
+            this.btConsultaData.Size = new System.Drawing.Size(185, 49);
+            this.btConsultaData.TabIndex = 3;
+            this.btConsultaData.Text = "Consultar";
+            this.btConsultaData.UseVisualStyleBackColor = true;
+            this.btConsultaData.Click += new System.EventHandler(this.btConsultaData_Click);
             // 
             // Consulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 721);
-            this.Controls.Add(this.btConsulta);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grupo3);
             this.Controls.Add(this.grupo1);
@@ -175,6 +189,7 @@
         private System.Windows.Forms.TextBox txtdataempdev;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgConsulta;
-        private System.Windows.Forms.Button btConsulta;
+        private System.Windows.Forms.Button btConsultaLivro;
+        private System.Windows.Forms.Button btConsultaData;
     }
 }

@@ -12,7 +12,7 @@ create table Amigos(
 );
 
 Create table Livros(
-	CodLivro int,
+	CodLivro varchar(6),
 	Titulo nvarchar(50),
 	Autor nvarchar(30),
 	Editora nvarchar(30),
@@ -20,7 +20,7 @@ Create table Livros(
 );
 
 Create table Emprestimos(
-	CodLivro int,
+	CodLivro varchar(6),
 	CodAmigo int,
 	DataEmprestimo date,
 	DataDevolucao date,
@@ -32,13 +32,13 @@ Create table Emprestimos(
 );
 
 Insert Into Amigos Values
-	('2', 'Anthony', 'Rua Exemplo', 'Bairro Exemplo', 'Cidade Exemplo', '900000000');
+	('1', 'Cassia', 'Rua Exemplo', 'Bairro Exemplo', 'Cidade Exemplo', '900000000');
 
 Insert Into Livros Values
 	('1', 'Titulo Exemplo', 'Autor Exemplo', 'Editora Exemplo');
 
 Insert into Emprestimos Values
-	('21', '1', '24/05/2022', '25/05/2022')
+	('1', '2', '24/05/2022', '25/05/2022')
 
 select * from Amigos
 select * from Livros
@@ -50,4 +50,14 @@ Select Amigos.CodAmigo, Amigos.Nome, Livros.CodLivro, Livros.Titulo,
 Emprestimos.DataEmprestimo, Emprestimos.DataDevolucao from Amigos 
 inner join Emprestimos on Amigos.CodAmigo = Emprestimos.CodAmigo
 inner join Livros on Emprestimos.CodLivro = Livros.CodLivro
-where Livros.Titulo like '%Anime%' or Livros.CodLivro = '1';
+where Livros.Titulo like '%Anime%' or Livros.CodLivro like '1%';
+
+Select Amigos.CodAmigo, Amigos.Nome, Livros.CodLivro, Livros.Titulo, 
+Emprestimos.DataEmprestimo, Emprestimos.DataDevolucao from Amigos 
+inner join Emprestimos on Amigos.CodAmigo = Emprestimos.CodAmigo
+inner join Livros on Emprestimos.CodLivro = Livros.CodLivro
+where DataEmprestimo like '%2022-05%' or DataDevolucao like '%2022-06%';
+
+drop table Emprestimos;
+drop table Livros;
+drop table Amigos;
