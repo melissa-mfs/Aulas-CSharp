@@ -32,13 +32,25 @@ Create table Emprestimos(
 );
 
 Insert Into Amigos Values
-	('1', 'Cassia', 'Rua Exemplo', 'Bairro Exemplo', 'Cidade Exemplo', '900000000');
+	('1', 'Cassia', 'Rua Exemplo', 'Bairro Exemplo', 'Cidade Exemplo', '900000000'),
+	('2', 'Anthony', 'Rua Exemplo', 'Bairro Exemplo', 'Cidade Exemplo', '900000000'),
+	('3', 'Melissa', 'Rua Japão', 'Baronesa', 'Mauá', '912345678'),
+	('4', 'Amanda', 'Rua Esmeralda', 'Jardim Mauá', 'Mauá', '900000000'),
+	('5', 'Geovana', 'Rua das Pérolas', 'Liberdade', 'São Paulo', '987654321');
 
 Insert Into Livros Values
-	('1', 'Titulo Exemplo', 'Autor Exemplo', 'Editora Exemplo');
+	('1', 'Titulo Exemplo', 'Autor Exemplo', 'Editora Exemplo'),
+	('123', 'Alice: através do espelho', 'Lewis Carrol', 'Macmillan'),
+	('3', 'Harry Potter e o cálice de fogo', 'J.K Rowling', 'Intrísica'),
+	('3452', 'Percy Jackson e o mar de monstros', 'Rick Riordan', 'Macmillan'),
+	('4', 'Harry Potter e a camara secreta', 'J.K Rownling', 'Intrísica');
 
 Insert into Emprestimos Values
-	('1', '2', '24/05/2022', '25/05/2022')
+	('1', '2', '24/05/2022', '25/06/2022'),
+	('3', '4', '24/02/2022', '25/03/2022'),
+	('5', '123', '24/04/2022', '25/05/2022'),
+	('1', '3452', '24/03/2022', '25/03/2022'),
+	('1', '3', '24/04/2022', '25/05/2022');
 
 select * from Amigos
 select * from Livros
