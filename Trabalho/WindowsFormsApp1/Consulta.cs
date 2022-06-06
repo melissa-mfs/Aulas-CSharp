@@ -71,22 +71,35 @@ namespace WindowsFormsApp1
         {
             try
             {
-                tblConsulta = new DataTable();
+                if (txtdataempdev.TextLength > 0)
+                {
+                    tblConsulta = new DataTable();
 
-                //precisa inverter a data para 2022-05-24
+                    //precisa inverter a data 06/06/2022 para 2022-06-06
+                    var dt = DateTime.Parse(txtdataempdev.Text).ToString("yyyy-MM-dd");
+                    Console.WriteLine(dt);
 
-                strsql = $@"Select Amigos.CodAmigo, Amigos.Nome, Livros.CodLivro, Livros.Titulo, 
+
+                    strsql = $@"Select Amigos.CodAmigo, Amigos.Nome, Livros.CodLivro, Livros.Titulo, 
                             Emprestimos.DataEmprestimo, Emprestimos.DataDevolucao from Amigos 
                             inner join Emprestimos on Amigos.CodAmigo = Emprestimos.CodAmigo
                             inner join Livros on Emprestimos.CodLivro = Livros.CodLivro
-                            where DataEmprestimo like '%2022-05%' 
-                            or DataDevolucao like '%2022-06%';";
+                            where DataEmprestimo like '%{dt}%' 
+                            or DataDevolucao like '%{dt}%';";
 
-                adapter = new SqlDataAdapter(strsql, Conex);
-                adapter.Fill(tblConsulta);
+                    adapter = new SqlDataAdapter(strsql, Conex);
+                    adapter.Fill(tblConsulta);
 
-                //mostra no datagrid
-                dgConsulta.DataSource = tblConsulta;
+                    //mostra no datagrid
+                    dgConsulta.DataSource = tblConsulta;
+                }
+                else
+                {
+                    for (int i = 0; i < dgConsulta.RowCount; i++)
+                    {
+                        dgConsulta.Rows[i].DataGridView.Columns.Clear();
+                    }
+                }
             }
             catch
             {

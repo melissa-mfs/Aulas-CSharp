@@ -31,13 +31,15 @@
             this.grupo3 = new System.Windows.Forms.GroupBox();
             this.dgConsulta = new System.Windows.Forms.DataGridView();
             this.grupo1 = new System.Windows.Forms.GroupBox();
+            this.btConsultaLivro = new System.Windows.Forms.Button();
             this.txtcodnome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btConsultaData = new System.Windows.Forms.Button();
             this.txtdataempdev = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btConsultaLivro = new System.Windows.Forms.Button();
-            this.btConsultaData = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.grupo3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgConsulta)).BeginInit();
             this.grupo1.SuspendLayout();
@@ -68,6 +70,7 @@
             // 
             // grupo1
             // 
+            this.grupo1.Controls.Add(this.label3);
             this.grupo1.Controls.Add(this.btConsultaLivro);
             this.grupo1.Controls.Add(this.txtcodnome);
             this.grupo1.Controls.Add(this.label1);
@@ -80,10 +83,22 @@
             this.grupo1.TabIndex = 2;
             this.grupo1.TabStop = false;
             // 
+            // btConsultaLivro
+            // 
+            this.btConsultaLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConsultaLivro.Location = new System.Drawing.Point(829, 20);
+            this.btConsultaLivro.Margin = new System.Windows.Forms.Padding(4);
+            this.btConsultaLivro.Name = "btConsultaLivro";
+            this.btConsultaLivro.Size = new System.Drawing.Size(185, 49);
+            this.btConsultaLivro.TabIndex = 2;
+            this.btConsultaLivro.Text = "Consultar";
+            this.btConsultaLivro.UseVisualStyleBackColor = true;
+            this.btConsultaLivro.Click += new System.EventHandler(this.btConsultaLivro_Click);
+            // 
             // txtcodnome
             // 
             this.txtcodnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcodnome.Location = new System.Drawing.Point(353, 46);
+            this.txtcodnome.Location = new System.Drawing.Point(353, 29);
             this.txtcodnome.Margin = new System.Windows.Forms.Padding(4);
             this.txtcodnome.Name = "txtcodnome";
             this.txtcodnome.Size = new System.Drawing.Size(372, 34);
@@ -93,7 +108,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 49);
+            this.label1.Location = new System.Drawing.Point(73, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(263, 29);
@@ -102,6 +117,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btConsultaData);
             this.groupBox2.Controls.Add(this.txtdataempdev);
             this.groupBox2.Controls.Add(this.label5);
@@ -114,10 +130,22 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
+            // btConsultaData
+            // 
+            this.btConsultaData.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConsultaData.Location = new System.Drawing.Point(829, 19);
+            this.btConsultaData.Margin = new System.Windows.Forms.Padding(4);
+            this.btConsultaData.Name = "btConsultaData";
+            this.btConsultaData.Size = new System.Drawing.Size(185, 49);
+            this.btConsultaData.TabIndex = 3;
+            this.btConsultaData.Text = "Consultar";
+            this.btConsultaData.UseVisualStyleBackColor = true;
+            this.btConsultaData.Click += new System.EventHandler(this.btConsultaData_Click);
+            // 
             // txtdataempdev
             // 
             this.txtdataempdev.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdataempdev.Location = new System.Drawing.Point(353, 46);
+            this.txtdataempdev.Location = new System.Drawing.Point(353, 34);
             this.txtdataempdev.Margin = new System.Windows.Forms.Padding(4);
             this.txtdataempdev.Name = "txtdataempdev";
             this.txtdataempdev.Size = new System.Drawing.Size(372, 34);
@@ -127,36 +155,36 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(73, 46);
+            this.label5.Location = new System.Drawing.Point(73, 34);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(263, 29);
             this.label5.TabIndex = 0;
             this.label5.Text = "Empréstimo por data:";
             // 
-            // btConsultaLivro
+            // label2
             // 
-            this.btConsultaLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultaLivro.Location = new System.Drawing.Point(829, 29);
-            this.btConsultaLivro.Margin = new System.Windows.Forms.Padding(4);
-            this.btConsultaLivro.Name = "btConsultaLivro";
-            this.btConsultaLivro.Size = new System.Drawing.Size(185, 49);
-            this.btConsultaLivro.TabIndex = 2;
-            this.btConsultaLivro.Text = "Consultar";
-            this.btConsultaLivro.UseVisualStyleBackColor = true;
-            this.btConsultaLivro.Click += new System.EventHandler(this.btConsultaLivro_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(349, 72);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(222, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Data: dd/mm/yyyy ou dd/mm";
             // 
-            // btConsultaData
+            // label3
             // 
-            this.btConsultaData.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultaData.Location = new System.Drawing.Point(829, 31);
-            this.btConsultaData.Margin = new System.Windows.Forms.Padding(4);
-            this.btConsultaData.Name = "btConsultaData";
-            this.btConsultaData.Size = new System.Drawing.Size(185, 49);
-            this.btConsultaData.TabIndex = 3;
-            this.btConsultaData.Text = "Consultar";
-            this.btConsultaData.UseVisualStyleBackColor = true;
-            this.btConsultaData.Click += new System.EventHandler(this.btConsultaData_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(349, 67);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(261, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Informe: Código ou nome do Livro";
             // 
             // Consulta
             // 
@@ -191,5 +219,7 @@
         private System.Windows.Forms.DataGridView dgConsulta;
         private System.Windows.Forms.Button btConsultaLivro;
         private System.Windows.Forms.Button btConsultaData;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
